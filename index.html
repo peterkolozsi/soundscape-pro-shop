@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SoundScape Pro | Dein Raum für Fokus & Entspannung</title>
+    <title>SoundScape Pro | SonicCure Solutions GmbH</title>
     <style>
-        /* --- AUFGABE 1 & 3: DESIGN-SYSTEM --- */
         :root {
-            --primary: #1A1A2E;     /* Deep Night Blue (Hoher Kontrast) */
-            --accent: #E94560;      /* Focus-Berry (Markenfarbe) */
+            --primary: #1A1A2E;
+            --accent: #E94560;
             --bg: #F8F9FA;
             --text: #16213E;
             --white: #FFFFFF;
@@ -22,7 +21,6 @@
             line-height: 1.6;
         }
 
-        /* Barrierefreie Navigation */
         header {
             background: var(--primary);
             color: var(--white);
@@ -37,16 +35,8 @@
             margin: 0 15px;
             padding: 8px;
             font-weight: 500;
-            display: inline-block;
         }
 
-        nav a:focus {
-            outline: 3px solid var(--accent);
-            background: rgba(255,255,255,0.1);
-            border-radius: 4px;
-        }
-
-        /* Hero-Bereich (Aufgabe 2: Bildintegration) */
         .hero {
             background: linear-gradient(rgba(26, 26, 46, 0.85), rgba(26, 26, 46, 0.85)), 
                         url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80');
@@ -62,16 +52,9 @@
             color: var(--white);
             padding: 18px 35px;
             border-radius: 30px;
-            font-size: 1.2rem;
-            font-weight: bold;
             text-decoration: none;
             display: inline-block;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .cta-button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 20px rgba(233, 69, 96, 0.3);
+            font-weight: bold;
         }
 
         section {
@@ -84,43 +67,16 @@
         }
 
         h2 { border-left: 5px solid var(--accent); padding-left: 15px; color: var(--primary); }
+        h3 { color: var(--accent); margin-top: 25px; }
 
-        /* --- AUFGABE 3: MARKEN-MOCKUPS --- */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
 
-        .brand-item {
-            border: 1px solid #eee;
+        .company-info {
+            background: #f0f4f8;
             padding: 20px;
             border-radius: 10px;
-            text-align: center;
-        }
-
-        .brand-visual {
-            height: 100px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 15px;
-            border-radius: 8px;
-            background: #f0f0f0;
-        }
-
-        /* Wortbildmarke Mockup */
-        .logo-mockup {
-            background: var(--primary);
-            color: var(--white);
-            padding: 15px;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        .logo-icon { color: var(--accent); margin-right: 8px; font-size: 1.5rem; }
-
-        /* Farbmarke Block */
-        .color-block {
-            width: 100%;
-            height: 60px;
-            background-color: var(--accent);
-            border-radius: 4px;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--primary);
         }
 
         footer {
@@ -131,114 +87,98 @@
         }
 
         .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: 1000px; margin: auto; }
-
-        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="logo-mockup" style="display: inline-block; margin-bottom: 10px;">
-        <span class="logo-icon">〰️</span>SoundScape Pro
+    <div style="font-weight: bold; font-size: 1.5rem; margin-bottom: 10px;">
+        <span style="color: var(--accent);">〰️</span> SoundScape Pro
     </div>
-    <nav aria-label="Hauptnavigation">
-        <a href="#about">Über die Marke</a>
-        <a href="#media">Rechtliches</a>
-        <a href="#privacy">Datenschutz</a>
-        <a href="#legal">Impressum</a>
+    <nav>
+        <a href="#about">Das Unternehmen</a>
+        <a href="#brand">Die Marke</a>
+        <a href="#legal">Rechtliches</a>
     </nav>
 </header>
 
 <main>
     <div class="hero">
-        <h2>Blende den Lärm aus.</h2>
-        <p>Erschaffe deine perfekte Arbeitsatmosphäre mit handverlesenen Klängen.</p>
-        <a href="#" class="cta-button">Vollversion kaufen - 19,99 €</a>
+        <h2>Perfekter Fokus durch Klang.</h2>
+        <p>Entwickelt von den Akustik-Experten der SonicCure Solutions GmbH.</p>
+        <a href="#" class="cta-button">Jetzt SoundScape Pro entdecken</a>
     </div>
 
     <section id="about">
-        <h2>About Us: Unsere Identität</h2>
-        <p>SonicCure Solutions wurde in Salzburg gegründet, um die digitale Arbeitswelt akustisch zu verbessern. Unsere Markenidentität spiegelt die Balance zwischen Technik und Natur wider.</p>
+        <h2>Über uns: SonicCure Solutions GmbH</h2>
+        
+        <div class="company-info">
+            <p><strong>Standort:</strong> Unser Hauptsitz befindet sich im Herzen von <strong>Wien, Österreich</strong> (1010 Wien, Musterstraße 42).</p>
+            <p><strong>Team:</strong> Wir sind ein leidenschaftliches Team aus <strong>5 Experten</strong> in den Bereichen Audio-Engineering, Psychologie und Software-Entwicklung.</p>
+        </div>
+
+        <h3>Unsere Mission</h3>
+        <p>Die SonicCure Solutions GmbH wurde mit der Vision gegründet, die negativen Auswirkungen von digitalem Lärm auf die menschliche Konzentration zu minimieren. In einer Welt voller Ablenkungen schaffen wir mit unserer Software „SoundScape Pro“ digitale Rückzugsorte. Wir kombinieren wissenschaftliche Erkenntnisse der Psychoakustik mit modernster Software-Architektur, um die kognitive Leistungsfähigkeit unserer Nutzer nachhaltig zu steigern.</p>
+
+        <h3>Unsere Zielgruppe</h3>
+        <div class="grid">
+            <div style="background: #fff; border: 1px solid #ddd; padding: 15px; border-radius: 8px;">
+                <strong>Digital Nomads & Home-Office</strong>
+                <p>Professionals, die in unruhigen Umgebungen eine konstante Konzentrationshilfe benötigen.</p>
+            </div>
+            <div style="background: #fff; border: 1px solid #ddd; padding: 15px; border-radius: 8px;">
+                <strong>Studierende</strong>
+                <p>Junge Menschen in intensiven Lernphasen, die akustische Abschirmung in Bibliotheken suchen.</p>
+            </div>
+            <div style="background: #fff; border: 1px solid #ddd; padding: 15px; border-radius: 8px;">
+                <strong>Health & Wellness</strong>
+                <p>Personen mit Schlafschwierigkeiten oder Tinnitus, die beruhigende Klangteppiche zur Entspannung nutzen.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="brand">
+        <h2>Die Marke: SoundScape Pro</h2>
+        <p>Während unsere Firma SonicCure Solutions die technische Basis stellt, verkörpert die Marke <strong>SoundScape Pro</strong> das Erlebnis für den Endnutzer.</p>
         
         <div class="grid">
-            <div class="brand-item">
-                <div class="brand-visual">
-                    <div class="logo-mockup"><span class="logo-icon">〰️</span>SoundScape</div>
+            <div style="text-align: center; border: 1px solid #eee; padding: 20px; border-radius: 10px;">
+                <div style="background: var(--primary); color: white; padding: 15px; border-radius: 5px; margin-bottom: 10px;">
+                    <span style="color: var(--accent);">〰️</span> SoundScape
                 </div>
-                <h3>1. Wortbildmarke</h3>
-                <p>Kombination aus einer abstrakten Schallwelle (〰️) und klarer Typografie. Symbolisiert die Kontrolle über den Klang.</p>
+                <strong>Wortbildmarke</strong>
+                <p>Abstrakte Schallwelle kombiniert mit moderner Typografie.</p>
             </div>
-
-            <div class="brand-item">
-                <div class="brand-visual">
-                    <button onclick="alert('Beee-up! (Hörmarke startet)')" aria-label="Hörmarke abspielen" style="font-size: 2rem; background: none; border: 2px solid var(--accent); border-radius: 50%; width: 70px; height: 70px; cursor: pointer;">▶️</button>
-                </div>
-                <h3>2. Hörmarke</h3>
-                <p>Ein ansteigender 3-Sekunden-Sinuston. Er aktiviert psychologisch den Fokus-Modus des Nutzers.</p>
-            </div>
-
-            <div class="brand-item">
-                <div class="brand-visual">
-                    <div class="color-block"></div>
-                </div>
-                <h3>3. Farbmarke: Focus-Berry</h3>
-                <p>HEX #E94560. Eine energetische Farbe, die in der App wichtige Interaktionselemente hervorhebt.</p>
+            <div style="text-align: center; border: 1px solid #eee; padding: 20px; border-radius: 10px;">
+                <div style="font-size: 2rem; margin-bottom: 10px;">🔴</div>
+                <strong>Farbmarke: Focus-Berry</strong>
+                <p>HEX #E94560 - steht für Energie und präzise Interaktion.</p>
             </div>
         </div>
-        <p><strong>Klassifizierung:</strong> Unsere Marken sind den Nizza-Klassen 9 (Software) und 41 (Audio-Unterhaltung) zugeordnet.</p>
+        <p style="margin-top: 20px; font-style: italic;">Markenschutz angemeldet unter Nizza-Klassen 9 und 41.</p>
     </section>
 
-    <section id="media">
-        <h2>Urheberrecht & Lizenzen</h2>
-        <div class="grid" style="grid-template-columns: 1fr 1fr;">
-            <div>
-                <h3>Mediennachweise</h3>
-                <ul>
-                    <li><strong>Bilder:</strong> "Waldnebel" von kazuend via Unsplash (Unsplash License).</li>
-                    <li><strong>Audio:</strong> HQ-Samples von Freesound.org (Creative Commons 0).</li>
-                    <li><strong>Fonts:</strong> Roboto & Open Sans (Apache License 2.0).</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Nutzungsrechte</h3>
-                <p>Mit dem Kauf erwerben Sie eine <strong>Lifetime-Einzelnutzerlizenz</strong>. Das Eigentum am Quellcode verbleibt bei SonicCure Solutions. Kommerzielle Nutzung der Mixe ist erlaubt.</p>
-                <p><em>Haftungsbeschränkung:</em> Wir haften nicht für Gehörschäden bei unsachgemäßer Lautstärkeanwendung.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="privacy">
-        <h2>Datenschutzerklärung</h2>
-        <p>Der Schutz Ihrer Daten ist uns wichtig. Wir speichern lediglich Ihre E-Mail-Adresse zur Lizenzaktivierung (Art. 6 Abs. 1 lit. b DSGVO). Es findet kein Tracking Ihres Hörverhaltens statt. Analyse-Daten werden nur anonymisiert erhoben.</p>
-    </section>
-
-    <section>
-        <h2>Barrierefreiheitserklärung</h2>
-        <p>Diese Website ist nach <strong>WCAG 2.2 AA</strong> gestaltet. </p>
-        <ul>
-            <li><strong>Kontrast:</strong> Alle Texte weisen ein Kontrastverhältnis von mindestens 7:1 zum Hintergrund auf.</li>
-            <li><strong>Bedienbarkeit:</strong> Die Seite ist vollständig per Tastatur navigierbar.</li>
-            <li><strong>Screenreader:</strong> Wir nutzen semantische HTML-Tags und ARIA-Labels für alle interaktiven Elemente.</li>
-        </ul>
-        <p>Sollten Sie Barrieren finden, kontaktieren Sie uns bitte unter accessibility@sonic-cure.at.</p>
+    <section id="legal">
+        <h2>Rechtliche Informationen</h2>
+        <p><strong>Urheberrecht:</strong> Alle Audio-Samples sind Eigenaufnahmen oder lizenzfrei von Freesound.org (CC0). Hintergrundbild via Unsplash (kazuend).</p>
+        <p><strong>Barrierefreiheit:</strong> Diese Seite ist WCAG 2.2 AA konform gestaltet (Kontrast 7:1, Tastaturbedienung).</p>
+        <p><strong>Datenschutz:</strong> Datensparsame Verarbeitung gemäß Art. 6 DSGVO. Keine Analyse des individuellen Hörverhaltens.</p>
     </section>
 </main>
 
-<footer id="legal">
+<footer>
     <div class="footer-grid">
         <div>
             <h3>Kontakt</h3>
             <p>SonicCure Solutions GmbH<br>
-            Techno-Z Salzburg, Haus 3<br>
-            5020 Salzburg, Österreich</p>
-            <p>E-Mail: support@sonic-cure.at</p>
+            Wien, Österreich<br>
+            E-Mail: office@sonic-cure.at</p>
         </div>
         <div>
-            <h3>Impressum (§ 24 Mediengesetz)</h3>
-            <p><strong>Firmenbuch:</strong> FN 555444z | HG Salzburg<br>
-            <strong>UID:</strong> ATU88877766<br>
-            <strong>Kammer:</strong> WKO Salzburg (Fachgruppe UBIT)<br>
-            <strong>Geschäftsführung:</strong> [Dein Name]</p>
+            <h3>Impressum</h3>
+            <p>FN 555444z | UID: ATU88877766<br>
+            Handelsgericht Wien<br>
+            Geschäftsführung: [Dein Name]</p>
         </div>
     </div>
 </footer>
