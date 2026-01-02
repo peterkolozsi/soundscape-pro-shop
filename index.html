@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" style="scroll-behavior: smooth;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,9 +27,13 @@
             padding: 2rem 1rem;
             text-align: center;
             border-bottom: 5px solid var(--accent);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         nav a { color: var(--white); text-decoration: none; margin: 0 15px; font-weight: 500; }
+        nav a:hover { color: var(--accent); }
         nav a:focus { outline: 3px solid var(--accent); }
 
         .hero {
@@ -52,16 +56,21 @@
         }
 
         h2 { border-left: 5px solid var(--accent); padding-left: 15px; color: var(--primary); }
+        h3 { color: var(--primary); margin-top: 25px; }
+
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
 
         .brand-item { border: 1px solid #eee; padding: 20px; border-radius: 10px; text-align: center; }
         .brand-visual { height: 80px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; background: #f9f9f9; }
 
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 0.9rem; }
         th, td { padding: 12px; border: 1px solid #ddd; text-align: left; }
         th { background: var(--primary); color: white; }
 
-        footer { background: var(--primary); color: white; padding: 40px 20px; margin-top: 60px; }
+        footer { background: var(--primary); color: white; padding: 60px 20px; margin-top: 60px; }
+        
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
     </style>
 </head>
 <body>
@@ -71,8 +80,10 @@
         <span style="color: var(--accent);">〰️</span> SoundScape Pro
     </div>
     <nav aria-label="Hauptnavigation">
-        <a href="#about">About & Marke</a>
-        <a href="#media">Medien & Lizenz</a>
+        <a href="#about">Über uns</a>
+        <a href="#brand">Marke</a>
+        <a href="#media">Rechtliches</a>
+        <a href="#privacy">Datenschutz</a>
         <a href="#legal">Impressum</a>
     </nav>
 </header>
@@ -81,27 +92,30 @@
     <div class="hero">
         <h2>Fokus durch Akustik.</h2>
         <p>Ein Produkt der SonicCure Solutions GmbH, Wien.</p>
-        <a href="#" style="background: var(--accent); color: white; padding: 15px 30px; border-radius: 30px; text-decoration: none; font-weight: bold;">Vollversion kaufen</a>
+        <a href="#" style="background: var(--accent); color: white; padding: 15px 30px; border-radius: 30px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 20px;">Vollversion kaufen - 19,99 €</a>
     </div>
 
     <section id="about">
-        <h2>Über uns & Markenstrategie</h2>
-        <p><strong>Firma:</strong> SonicCure Solutions GmbH | <strong>Standort:</strong> 1010 Wien, AT | <strong>Mitarbeiter:</strong> 5</p>
-        <p><strong>Mission:</strong> Wir entwickeln Software zur Steigerung der kognitiven Leistung. Unsere Zielgruppe umfasst Studierende, Programmierer und Personen im Home-Office.</p>
-        
+        <h2>Über SonicCure Solutions</h2>
+        <p><strong>Standort:</strong> 1010 Wien, Österreich | <strong>Team:</strong> 5 Experten für Audio & Psychologie</p>
+        <p>Die SonicCure Solutions GmbH entwickelt Software zur Steigerung der kognitiven Leistung. Mit SoundScape Pro bieten wir Studierenden und Professionals eine wissenschaftlich fundierte Lösung zur akustischen Abschirmung.</p>
+    </section>
+
+    <section id="brand">
+        <h2>Markenidentität & Prüfung</h2>
         <p style="background: #eef2f7; padding: 15px; border-radius: 5px;">
-            <strong>Markenrechtliche Prüfung:</strong> Es wurde eine Ähnlichkeitsrecherche via <strong>TMview</strong> und <strong>EUIPO eSearch</strong> durchgeführt. Für "SoundScape Pro" liegen in den Nizza-Klassen 9 und 41 keine Kollisionen vor.
+            <strong>Markenrechtlicher Check:</strong> Es wurde eine Ähnlichkeitsrecherche via <strong>TMview</strong> und <strong>EUIPO eSearch</strong> durchgeführt. Für "SoundScape Pro" liegen in den Nizza-Klassen 9 und 41 keine Kollisionen vor.
         </p>
 
         <div class="grid">
             <div class="brand-item">
                 <div class="brand-visual">
-                    <div style="background: var(--primary); color: white; padding: 10px; border-radius: 5px;">
+                    <div style="background: var(--primary); color: white; padding: 10px; border-radius: 5px; font-weight: bold;">
                         <span style="color: var(--accent);">〰️</span> SoundScape
                     </div>
                 </div>
                 <h3>1. Wortbildmarke</h3>
-                <p>Kombination aus Name und Icon.</p>
+                <p>Kombination aus Name und Wellen-Icon für den Webauftritt.</p>
             </div>
 
             <div class="brand-item">
@@ -109,7 +123,7 @@
                     <span style="font-size: 3rem; color: var(--accent);">〰️</span>
                 </div>
                 <h3>2. Bildmarke</h3>
-                <p>Das alleinstehende Wellen-Symbol für App-Icons.</p>
+                <p>Das alleinstehende Wellen-Symbol (Icon) für App-Icons und Favicons.</p>
             </div>
 
             <div class="brand-item">
@@ -117,100 +131,69 @@
                     <div style="background: var(--accent); width: 80%; height: 40px; border-radius: 5px;"></div>
                 </div>
                 <h3>3. Farbmarke</h3>
-                <p>Unser geschütztes "Focus-Berry" (HEX #E94560).</p>
+                <p>Unser geschütztes "Focus-Berry" (HEX #E94560) für hohen Wiedererkennungswert.</p>
             </div>
         </div>
     </section>
 
     <section id="media">
-        <h2>Urheberrecht & Medien</h2>
+        <h2>Urheberrecht & Lizenzmodell</h2>
         <table>
             <thead>
-                <tr><th>Medium</th><th>Quelle</th><th>Lizenz</th></tr>
+                <tr><th>Medium</th><th>Quelle</th><th>Lizenz / Status</th></tr>
             </thead>
             <tbody>
-                <tr><td>Bilder</td><td>kazuend (Unsplash)</td><td>Unsplash License</td></tr>
-                <tr><td>Grafiken</td><td>Eigenkreation</td><td>© SonicCure</td></tr>
-                <tr><td>Texte</td><td>Eigenkreation</td><td>© SonicCure</td></tr>
-                <tr><td>Video (Demo)</td><td>Pexels Stock</td><td>Pexels License</td></tr>
+                <tr><td>Bilder (Hero)</td><td>kazuend (Unsplash)</td><td>Unsplash License</td></tr>
+                <tr><td>Grafiken / Logo</td><td>Eigenkreation</td><td>© SonicCure Solutions</td></tr>
+                <tr><td>Texte</td><td>Eigenkreation</td><td>© SonicCure Solutions</td></tr>
+                <tr><td>Video (Demo)</td><td>Pexels Stock</td><td>Pexels License (gemockt)</td></tr>
                 <tr><td>Sounds</td><td>Freesound / Eigenaufnahmen</td><td>CC0 / Eigenbesitz</td></tr>
             </tbody>
         </table>
+
+        <h3>Haftungsausschluss</h3>
+        <p>Die Nutzung der Software erfolgt auf eigene Gefahr. Die SonicCure Solutions GmbH haftet nicht für Hörschäden durch unsachgemäßen Gebrauch (zu hohe Lautstärke). Eine medizinische Heilwirkung wird nicht garantiert.</p>
     </section>
 
     <section id="privacy">
-    <h2>Datenschutzerklärung (DSGVO)</h2>
-    <p>Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Nachfolgend informieren wir Sie darüber, wie wir Ihre Daten verarbeiten:</p>
+        <h2>Datenschutzerklärung</h2>
+        <p>Wir verarbeiten Ihre Daten (E-Mail) ausschließlich zur Vertragserfüllung (Art. 6 DSGVO).</p>
+        
+        <h3>Ihre Rechte</h3>
+        <ul>
+            <li><strong>Auskunft & Berichtigung:</strong> Sie können jederzeit Ihre Daten einsehen.</li>
+            <li><strong>Löschung:</strong> Sie haben das Recht auf "Vergessenwerden" (Art. 17 DSGVO).</li>
+        </ul>
 
-    <h3>1. Verarbeitung von Formulardaten</h3>
-    <p>Wenn Sie uns per Kontaktformular oder im Rahmen eines Kaufvorgangs Anfragen zukommen lassen, werden Ihre Angaben (Name, E-Mail-Adresse) zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. 
-    <strong>Rechtsgrundlage:</strong> Die Verarbeitung erfolgt zur Vertragserfüllung oder Durchführung vorvertraglicher Maßnahmen (Art. 6 Abs. 1 lit. b DSGVO).</p>
-
-    <h3>2. Cookies & Analysetools</h3>
-    <p>Diese Webseite verwendet ausschließlich <strong>technisch notwendige Cookies</strong> (Session-Cookies), um die Funktionalität des Webshops und des Warenkorbs zu gewährleisten. </p>
-    <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
-        <tr style="background: #f4f4f4;">
-            <th style="padding: 8px; border: 1px solid #ddd;">Name</th>
-            <th style="padding: 8px; border: 1px solid #ddd;">Zweck</th>
-            <th style="padding: 8px; border: 1px solid #ddd;">Dauer</th>
-        </tr>
-        <tr>
-            <td style="padding: 8px; border: 1px solid #ddd;">session_id</td>
-            <td style="padding: 8px; border: 1px solid #ddd;">Warenkorb-Funktion</td>
-            <td style="padding: 8px; border: 1px solid #ddd;">Sitzungsende</td>
-        </tr>
-    </table>
-    <p>Wir verzichten bewusst auf Tracking-Tools von Drittanbietern (wie Google Analytics), um Ihre Privatsphäre maximal zu schützen.</p>
-
-    <h3>3. Ihre Rechte (Betroffenenrechte)</h3>
-    <p>Sie haben jederzeit das Recht:</p>
-    <ul>
-        <li><strong>Auskunft</strong> über Ihre bei uns gespeicherten Daten zu erhalten (Art. 15 DSGVO).</li>
-        <li>Die <strong>Berichtigung</strong> unrichtiger Daten zu verlangen (Art. 16 DSGVO).</li>
-        <li>Die <strong>Löschung</strong> Ihrer Daten zu fordern ("Recht auf Vergessenwerden", Art. 17 DSGVO).</li>
-        <li>Die <strong>Einschränkung der Verarbeitung</strong> zu verlangen (Art. 18 DSGVO).</li>
-    </ul>
-    <p>Zur Ausübung dieser Rechte wenden Sie sich bitte an: <strong>privacy@sonic-cure.at</strong></p>
-</section>
+        <h3>Cookies</h3>
+        <table>
+            <tr style="background: #f4f4f4;"><th>Name</th><th>Zweck</th><th>Dauer</th></tr>
+            <tr><td>session_id</td><td>Technisch notwendiger Warenkorb-Cookie</td><td>Sitzung</td></tr>
+        </table>
+    </section>
 
     <section>
-        <h2>Barrierefreiheitserklärung</h2>
-        <p>Konformität: WCAG 2.2 AA. Hohe Kontraste, Tastaturbedienbarkeit und ARIA-Labels sind implementiert.</p>
+        <h2>Barrierefreiheit (WCAG 2.2 AA)</h2>
+        <p>Diese Seite erfüllt die Standards für Barrierefreiheit durch hohe Kontrastwerte (7:1), semantisches HTML und volle Tastaturbedienbarkeit.</p>
     </section>
-    <section id="license">
-    <h2>Lizenzbedingungen</h2>
-
-    <h3>1. Nutzungsrechte</h3>
-    <p>Mit dem Kauf von SoundScape Pro erwerben Sie ein einfaches, nicht übertragbares Nutzungsrecht für eine natürliche Person. 
-    Die Software darf auf beliebig vielen eigenen Geräten installiert und genutzt werden. 
-    Weitergabe, Vermietung oder Verkauf der Lizenz ist nicht gestattet.</p>
-
-    <h3>2. Rechte, die beim Unternehmen verbleiben</h3>
-    <p>Alle Urheber- und Verwertungsrechte an SoundScape Pro verbleiben bei der SonicCure Solutions GmbH. 
-    Es ist nicht gestattet, die Software zu dekompilieren, zu modifizieren, öffentlich zugänglich zu machen oder in anderer Weise zu verbreiten. 
-    Das Logo, die Marken und sämtliche Inhalte sind urheberrechtlich geschützt.</p>
-
-    <h3>3. Updates & Support</h3>
-    <p>Der Kauf beinhaltet lebenslange Software-Updates sowie technischen E-Mail-Support. 
-    Neue Premium-Funktionen können separat lizenziert werden.</p>
-
-    <h3>4. Haftungsbeschränkung</h3>
-    <p>Die SonicCure Solutions GmbH haftet ausschließlich für Schäden, die durch grobe Fahrlässigkeit oder Vorsatz verursacht wurden. 
-    Eine Haftung für Datenverlust, entgangene Gewinne oder sonstige Folgeschäden ist ausgeschlossen. 
-    Die Software wird „wie sie ist“ bereitgestellt; es wird keine Garantie für ununterbrochene Verfügbarkeit oder vollständige Fehlerfreiheit übernommen.</p>
-</section>
-
 </main>
 
-<footer>
+<footer id="legal">
     <div class="grid">
         <div>
             <h3>Kontakt</h3>
-            <p>SonicCure Solutions GmbH<br>Wien, Österreich<br>office@sonic-cure.at</p>
+            <p>SonicCure Solutions GmbH<br>
+               Musterstraße 42<br>
+               1010 Wien, Österreich</p>
+            <p>E-Mail: office@sonic-cure.at<br>
+               Tel: +43 1 1234567</p>
         </div>
         <div>
             <h3>Impressum</h3>
-            <p>FN 555444z | UID: ATU88877766<br>Handelsgericht Wien<br>GF: [Dein Name]</p>
+            <p><strong>Firmenbuch:</strong> FN 555444z | HG Wien<br>
+               <strong>UID-Nummer:</strong> ATU88877766<br>
+               <strong>Aufsichtsbehörde:</strong> Magistrat der Stadt Wien<br>
+               <strong>Geschäftsführung:</strong> Peter Kolozsi</p>
         </div>
     </div>
 </footer>
