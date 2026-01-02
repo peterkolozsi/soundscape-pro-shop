@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoundScape Pro | SonicCure Solutions GmbH</title>
+
     <style>
         :root {
             --primary: #1A1A2E;
@@ -87,15 +88,24 @@
         }
 
         .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: 1000px; margin: auto; }
+
+
+        a:focus, button:focus {
+            outline: 3px solid var(--accent);
+            outline-offset: 4px;
+        }
     </style>
 </head>
+
 <body>
 
-<header>
+<header role="banner">
     <div style="font-weight: bold; font-size: 1.5rem; margin-bottom: 10px;">
         <span style="color: var(--accent);">〰️</span> SoundScape Pro
     </div>
-    <nav>
+
+    
+    <nav aria-label="Hauptnavigation">
         <a href="#about">Das Unternehmen</a>
         <a href="#brand">Die Marke</a>
         <a href="#legal">Rechtliches</a>
@@ -160,8 +170,21 @@
 
     <section id="legal">
         <h2>Rechtliche Informationen</h2>
+
         <p><strong>Urheberrecht:</strong> Alle Audio-Samples sind Eigenaufnahmen oder lizenzfrei von Freesound.org (CC0). Hintergrundbild via Unsplash (kazuend).</p>
-        <p><strong>Barrierefreiheit:</strong> Diese Seite ist WCAG 2.2 AA konform gestaltet (Kontrast 7:1, Tastaturbedienung).</p>
+
+        
+        <h3>Barrierefreiheit</h3>
+        <ul>
+            <li>Diese Website verwendet semantische HTML‑Strukturen (header, nav, main, section, footer).</li>
+            <li>Alle Inhalte sind vollständig per Tastatur bedienbar.</li>
+            <li>Interaktive Elemente besitzen sichtbare Fokusrahmen.</li>
+            <li>Texte erfüllen die WCAG 2.2 AA Kontrastanforderungen.</li>
+            <li>Hintergrundbilder sind rein dekorativ und enthalten keine relevanten Informationen.</li>
+            <li>Nicht barrierefreie Inhalte: keine Gebärdensprache, keine Audiodeskription.</li>
+            <li>Feedback zur Barrierefreiheit: office@sonic-cure.at</li>
+        </ul>
+
         <p><strong>Datenschutz:</strong> Datensparsame Verarbeitung gemäß Art. 6 DSGVO. Keine Analyse des individuellen Hörverhaltens.</p>
     </section>
 </main>
