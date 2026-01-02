@@ -1,28 +1,25 @@
-# SoundScape Pro | SonicCure Solutions 🎧
+# SoundScape Pro | SonicCure Solutions GmbH 🎧
 
-Willkommen zum offiziellen Webshop von **SoundScape Pro**. Dieses Repository wurde im Rahmen einer universitären Übung erstellt, um die Umsetzung von Barrierefreiheit (WCAG 2.2), Urheberrecht und E-Commerce-Recht zu demonstrieren.
+Dieses Repository dient der Abgabe für die universitäre Übung im Bereich Web-Development & E-Commerce.
 
-## Aufgabe 0: Unternehmensprofil & Vision
+## Aufgabe 0: Detaillierte Unternehmensdefinition
 
-### Das Produkt
-**SoundScape Pro** ist eine innovative Audio-Software, die es Nutzern ermöglicht, individuelle Klangkulissen zur Steigerung der Konzentration zu erstellen.
-* **Kernfunktionen:** * **Smart Mixer:** Stufenloses Mischen von über 30 High-Fidelity-Klangquellen (z. B. Regen, Café-Atmosphäre, Wald).
-    * **Presets:** Speichern und Teilen von eigenen Sound-Kombinationen.
-    * **Fokus-Timer:** Integrierter Timer für Deep-Work-Sessions.
-* **Nutzen:** Maskierung von störenden Umgebungsgeräuschen und Reduktion von digitalem Stress.
+### Das Unternehmen (Corporate Identity)
+* **Firmenname:** SonicCure Solutions GmbH
+* **Standort:** Wien, Österreich (Hauptsitz im 1. Bezirk)
+* **Anzahl der Mitarbeiter:** 5 (Gründerteam bestehend aus Audio-Engineers, Software-Entwicklern und einer Psychologin)
+* **Unternehmensbeschreibung:** Die SonicCure Solutions GmbH ist ein spezialisierter Software-Anbieter im Bereich der digitalen Akustik. Unser Fokus liegt auf der Entwicklung von Tools, die durch gezielte Klangmanipulation die mentale Gesundheit und Konzentrationsfähigkeit im digitalen Zeitalter unterstützen.
 
-### Das Unternehmen
-* **Name:** SonicCure GmbH
-* **Standort:** Salzburg, Österreich
-* **Mitarbeiter:** 5 (Gründer-Team und Sound-Engineers)
+### Das Produkt & die Marke (Brand Identity)
+* **Markenname:** SoundScape Pro
+* **Produktkategorie:** Business-SaaS / Produktivitäts-Software
+* **Funktionen:** * **Smart Mixer:** Hochauflösendes Mischen von 30+ Natur- und Stadtklängen.
+    * **Focus-Timer:** Integriertes Zeitmanagement-Tool.
+    * **Cloud-Presets:** Speicherung individueller Klangkulissen.
+* **Zielgruppe:** * **Studierende:** Für ablenkungsfreies Lernen in öffentlichen Räumen.
+    * **Home-Office Worker:** Zur Maskierung von Haushaltslärm.
+    * **Meditations-Praktizierende:** Zur Schaffung einer entspannten Atmosphäre.
+* **Geschäftsmodell:** Einmalverkauf (Lifetime-Lizenz) für 19,99 €, um eine langfristige Kundenbindung ohne Abo-Zwang zu erreichen.
 
-### Zielgruppe
-Unsere Anwendung richtet sich an:
-* **Studierende und Lernende**, die Ruhe in lauten Umgebungen suchen.
-* **Software-Entwickler und Kreative**, die für "Deep Work" eine konstante Geräuschkulisse benötigen.
-* **Menschen mit Schlafstörungen oder Tinnitus**, die beruhigende Klänge zur Entspannung nutzen.
-
-### Geschäftsmodell
-Wir verfolgen ein hybrides Modell:
-1. **Einmalverkauf:** Die Desktop-Vollversion ist für 19,99 € (Lifetime-Lizenz) erhältlich.
-2. **Freemium-Web-App:** Eine kostenlose Basisversion mit eingeschränkter Sound-Bibliothek dient zur Kundengewinnung.
+---
+**Hinweis zur Barrierefreiheit:** Die Website wurde nach WCAG 2.2 AA Standards optimiert.
